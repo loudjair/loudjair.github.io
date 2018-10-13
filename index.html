@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Site Internet de Loudjair Mauvais</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script src="js/affichage.js"></script>
+</head>
+<body>
+	<h1>Portfolio &amp; Projet </h1>
+	<div style="margin: 0% 15%">
+		<p style="font-size: 20px">
+			Hello world !! Bienvenue sur mon site web dédié à mes projets informatiques. Ils sont essentiellement composés de mini jeux, vous trouverez des vidéos descriptives et quelques projets téléchargeables et jouables.
+			Sur ceux je vous souhaite une bonne navigation.
+		</p>
+		<h2>Méthode de programmation:</h2>
+		<p style="font-size: 20px">
+			A titre d'information, chaque projet sauf le sudoku a été programmé sous une forme de programmation dite "orientée objet".<br>C'est-à-dire qu'on crée des classes spécifiques à chaque entité d'un projet.<br>Cela favorise une meilleure ergonomie du projet informatique et la lisibilité du code.
+		</p>
+	</div>
+	<div id="projets" style="margin: 3% 15%">
+		<div class="projet" onmouseenter="afficher(this)" onmouseleave="cacher(this)">
+			<a href="projets/js/projets.html">
+				<img src="images/js.png" alt="javascript">
+			</a>
+			<p class="titre" id="javascript">Javascript</p>		
+		</div>
+		<div class="projet"  onmouseenter="afficher(this)" onmouseleave="cacher(this)">
+			<a href="projets/python/projets.html">
+				<img id="img-python" src="images/python.png" alt="python">				
+			</a>
+			<p class="titre" id="python">Python</p>		
+		</div>
+		<div class="projet"  onmouseenter="afficher(this)" onmouseleave="cacher(this)">
+			<a href="projets/php/projets.html">
+				<img id="img-php" src="images/php.png" alt="php">				
+			</a>
+			<p class="titre" id="php">Php</p>		
+		</div>
+	</div>
+</body>
+</html>

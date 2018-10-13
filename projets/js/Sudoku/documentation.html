@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Documentation du projet Sudoku:</title>
+	<link rel="stylesheet" type="text/css" href="../../../css/documentation.css">
+	<meta charset="utf-8">
+	<script>
+		let tab_doc =[];
+		window.onload= ()=>{
+			let i = 0;
+			for(;i<5;i++){
+				document.getElementById(JSON.stringify(i)).style.display="none"
+			}
+		}
+	</script>
+	<script type="text/javascript" src="../../../js/affichage.js">
+	</script>
+</head>
+<body>
+	<h1>Documentation du projet Sudoku:</h1>
+	<div class="description">
+		<h2>Description du projet:</h2>
+		<p>Le projet s'inspire du célèbre casse-tête "Sudoku", et le but est de remplir
+			la grille par une suite de chiffre allant de  1 à n, où n c'est la taille
+			de la grille. Le chiffre doit apparaitre qu'une seule fois sur une même ligne,
+			même colonne et même bloc.
+		</p> 
+	</div>
+	<br>
+	<ul class="nav_1">
+		Les fichiers du projet:
+		<ul class="nav_2">
+			<li onclick="afficher_doc(0)">bordure.js</li>
+			<li onclick="afficher_doc(1)">compatible.js</li>
+			<li onclick="afficher_doc(2)">grille.js</li>
+			<li onclick="afficher_doc(3)">remplissage</li>
+			<li onclick="afficher_doc(4)">verification</li>
+		</ul>
+	</ul>
+	<div class="explication" id="0">
+		<div>
+		<p>
+			<p>
+				Fichier qui contient des fonctions qui gère le style des bordures de la grille.
+			</p>
+			<p>
+				Les fonctions:
+			</p>
+			<ul>
+				<li>
+					<p>
+						bordure_3():<br>
+						Gère le style des bordures de la grille de taille 3.
+					</p>
+				</li>
+				<li>
+					<p>
+						bordure_6():<br>
+						Gère le style des bordures de la grille de taille 6.
+					</p>
+				</li>
+				<li>
+					<p>
+						bordure_9():<br>
+						Gère le style des bordures de la grille de taille 9.
+					</p>
+				</li>
+			</ul>
+		</p>			
+		</div>
+	</div>
+	<div class="explication" id="1">
+		<div>
+		<p>
+			<p>
+				Selon les navigateurs, l'affichage des éléments diffères.
+				Les fonctions:
+			</p>
+			<ul>
+				<li>
+					<p>
+						navigateur():<br>
+						Renvoie une valeur spécifique au navigateur concerné.
+					</p>
+				</li>
+				<li>
+					<p>
+						initialiser_bouton():<br>
+						Pour centrer les boutons sur le navigateur Chrome.
+					</p>
+				</li>
+			</ul>			
+		</p>			
+		</div>
+	</div>
+	<div class="explication" id="2">
+		<div>
+		<p>
+			<p>
+				Configuration stylistique de l'affichage de la grille.
+			</p>
+			<p>
+				Les fonctions:
+			</p>
+			<ul>
+				<li>
+					<p>
+						css_grid(taille):<br>
+						Gestion du style de la grille en fonction de la taille choisie.
+					</p>
+				</li>
+				<li>
+					<p>
+						parametrer(taille):<br>
+						Va paramétrer la taille de la grille.
+					</p>
+				</li>			
+			</ul>			
+		</p>			
+		</div>
+	</div>
+	<div class="explication" id="3">
+		<div>
+		<p>
+			Remplir la grille aléatoirement lors de l'initialisation.
+		</p>
+		<p>
+			Les fonctions:
+		</p>
+		<ul>
+			<li>
+				<p>
+					remplir_9(grille,valeurs):<br>
+					Remplir la grille de taille 9 aléatoirement lors de l'initialisation.
+					Et valeurs c'est un tableau des valeurs allant de 1 à 9.
+				</p>
+			</li>
+			<li>
+				<p>
+					remplir_6(grille,valeurs):<br>
+					Remplir la grille de taille 6 aléatoirement lors de l'initialisation.
+					Et valeurs c'est un tableau des valeurs allant de 1 à 6.
+				</p>
+			</li>
+			<li>
+				<p>
+					remplir_3(grille,valeurs):<br>
+					Remplir la grille de taille 9 aléatoirement lors de l'initialisation.
+					Et valeurs c'est un tableau des valeurs allant de 1 à 3.
+				</p>
+			</li>
+			<li>
+				<p>
+					finalisation_3(grille):<br>
+					Finalisation l'initialisation de la grille de taille 3, 
+					en choisissant aléatoirement,les cases 
+					à vider pour permettre au joueur à saisir un chiffre, lors de la partie.
+				</p>
+			</li>
+			<li>
+				<p>
+					finalisation(grille):<br>
+					Finalisation l'initialisation de la grille de taille 3 ou 9, 
+					en choisissant aléatoirement,les cases 
+					à vider pour permettre au joueur à saisir un chiffre, lors de la partie.
+				</p>
+			</li>
+			<li>
+				<p>
+					remplir(taille):<br>
+					En fonction de la taille ,on appelle les fonctions remplir_n et
+					finalisation, lors de l'initialisation.
+				</p>
+			</li>
+		</ul>
+		</div>
+	</div>
+	<div class="explication" id="4">
+		<div>
+		<p>
+			Vérifie si la grille a été bien remplie.
+		</p>
+		<p>
+			Les fonctions:
+		</p>
+		<ul>
+			<li>
+				<p>
+					verifier(bloc):<br>
+					Vérifie si la valeur saisie par le joueur, 
+					est conforme selon les valeurs
+					autorisées en fonction de la taille de la grille.
+				</p>
+			</li>
+			<li>
+				<p>
+					les_valeurs(taille):<br>
+					Retourne les valeurs autorisées en fonction de la taille de la grille.
+				</p>
+			</li>
+			<li>
+				<p>
+					verifier_colonne(taille,tab):<br>
+					Vérification de la colonne, si un chiffre apparait bien une fois.
+				</p>
+			</li>
+			<li>
+				<p>
+					verifier_ligne(taille,tab):<br>
+					Vérification de la ligne, si un chiffre apparait bien une fois.
+				</p>
+			</li>
+			<li>
+				<p>
+					case_6(tab):<br>
+					Vérification des valeurs remplies dans la grille de taille 6.
+				</p>
+			</li>
+			<li>
+				<p>
+					case_9(tab):<br>
+					Vérification des valeurs remplies dans la grille de taille 9.
+				</p>
+			</li>
+			<li>
+				<p>
+					valider():<br>
+					Lance la vérification lorsque le joueur a fini de remplir la grille.
+				</p>
+			</li>
+		</ul>			
+		</div>
+	</div>
+</body>
+</html>

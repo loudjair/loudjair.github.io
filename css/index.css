@@ -1,0 +1,110 @@
+.projet{
+	border-style: solid;
+	width: 310px;
+	height: 310px;
+	float: left;
+	margin: 1px 5px;
+	text-align: center;
+}
+#projets{
+	margin-top:10%; 
+	margin-left:20%;
+}
+img{
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+}
+
+img:hover{
+	opacity: 0.3;
+}
+.projet>div{
+	border-style: solid;
+}
+
+h1{
+	text-align: center;
+}
+#nota-bene{
+	font-size: 20px;
+	text-align: center;
+}
+
+.titre{
+	font-size: 40px;
+	display: none;
+}
+
+#lost{
+	position: relative;
+	top:-50px;
+}
+#three{
+	position: relative;
+	top:-200px;
+}
+
+#javascript{
+	position: relative;
+	top:-200px;
+}
+#python{
+	position: relative;
+	top: 10px;
+}
+#three-to-go,#lost-in-space{
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: center;
+	grid-column-gap: 50px;
+}
+
+video{
+	width: 550px;
+	height: auto;
+}
+
+#three-presentation,#lost-presentation{
+	width: 300px;
+	height:auto;
+}
+
+#img-lost{
+	position: relative;
+	top: 20%;
+}
+#img-python{
+	position: relative;
+	top:35%;
+}
+#img-php{
+	position: relative;
+	top:20%;
+}
+#php{
+	position: relative;
+	top:-30px;
+}
+#animation-serpent{
+	background-color: black;
+	border-color: black;
+	transition: .5s ease;
+}
+
+#animation-serpent:hover{
+	opacity: 0.3;
+}
+#snake{
+	color: black;
+	position: relative;
+	right:70%;
+	top:130px;
+}
+#lien-snake{
+	text-decoration: none;
+}
+#sudoku{
+	position: relative;
+	top: -200px;
+}

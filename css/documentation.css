@@ -1,0 +1,49 @@
+h1,h2,.description{
+	text-align: center;
+}
+p{
+	font-size: 20px;
+}
+/*
+
+	Partie du css se rapportant à l'ensemble de la doc
+*/
+
+/* Partie du css se rapportant à la navigation*/
+
+.nav_1,.nav_2{
+	list-style-type: none;
+	font-size: 25px;
+
+}
+.nav_1{
+	border-left: 10px solid black;
+	display: inline-block;
+	position: fixed;
+	top: 30%;
+	background-color: #878f99;
+	padding: 20px;
+	border-radius: 5px;
+}
+#choix1:hover,.nav_2>li:hover{
+	background-color: white;
+	cursor: pointer;
+}
+
+/* 
+	Css se rapportant aux explications
+*/
+
+.explication>div{
+	margin-left:30%;
+	margin-top:1.5%;  
+	width: 50%;
+	background-color: #878f99;
+	border-top: 10px solid black;
+	border-radius: 5px;
+}
+
+.explication>div>p{
+	text-align: center;
+	padding: 10px;
+}

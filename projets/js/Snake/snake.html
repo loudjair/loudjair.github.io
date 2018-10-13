@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head id="en_tete">
+	<title>Snake</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/snake.css">
+	<script src="./js/classes/verification.js"></script>
+	<script src="./js/classes/canvas.js"></script>
+	<script src="./js/classes/objet.js"></script>
+	<script src="./js/classes/son.js"></script>
+	<script src="./js/classes/pomme.js"></script>
+	<script src="./js/classes/serpent.js"></script>
+	<script src="./js/classes/jeu.js"></script>
+	<script src="./js/snake.js"></script>
+</head>
+<body>
+	<canvas id="canevas" width="600" height="600">
+	</canvas>
+	<!-- Le menu du jeu -->
+
+	<div id="menu">
+		<button id='jouer' type="button">Play</button>
+		<button onclick="window.location.reload();">Restart</button>
+	</div>
+
+	<div id="score">
+		<br>
+		Score:
+		<p id="point"></p>
+	</div>
+	<div style="position: absolute;top:30%; margin-left: 5%;">
+		<p style="font-size:20px">
+			Utilisez les flèches directionnelles pour diriger le serpent.
+		</p>
+	</div>
+	<!-- En cas de game over, le son s'activera -->
+
+	<audio id="gameOver">
+		<source src="./son/gameOver.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="pommeVerte">
+		<source src="./son/pommeVerte.mp3" type="audio/mpeg">
+	</audio>
+</body>
+</html>

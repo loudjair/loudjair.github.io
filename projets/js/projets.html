@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projet Javascript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../css/index.css">
+</head>
+<body>
+	<script src="Snake/js/classes/canvas.js"></script>
+	<script src="Snake/js/classes/objet.js"></script>
+	<script src="Snake/js/classes/serpent.js"></script>
+	<script src="../../js/animation-serpent.js"></script>
+	<script src="../../js/affichage.js"></script>
+	<h1>Projets en Javascript</h1>
+	<div id="projets">
+		<a href="Snake/snake.html" onmouseenter="afficher(this)" onmouseleave="cacher(this)" id="lien-snake">
+			<canvas class="projet" id="animation-serpent" width="310" height="310">
+			</canvas>
+			<p id="snake" class="titre">Snake</p>
+		</a>	
+		<div class="projet" onmouseenter="afficher(this)" onmouseleave="cacher(this)">
+			<a href="Sudoku/sudoku.html">
+				<img src="../../images/sudoku.JPG" alt="sudoku">
+			</a>
+			<p id="sudoku" class="titre">Sudoku</p>
+		</div>
+		<div class="projet">
+			<h3>Ressources:</h3>
+			<p>
+				<ul style="text-align:left">
+					Les liens de téléchargements du Snake:
+					<li><a href="">Via Github</a></li>
+					<li><a href="Snake.zip" download="Snake">Via au site</a></li>
+					Documentation technique:
+					<li><a href="Snake/documentation.html">Documentation</a></li>
+				</ul>
+				
+			</p>
+			<p>
+				<ul style="text-align:left">
+					Les liens de téléchargements du Sudoku:
+					<li><a href="">Via à Github</a></li>
+					<li><a href="Sudoku.zip" download="Sudoku">Via au site</a></li>
+					Documentation technique:
+					<li><a href="Sudoku/documentation.html">Documentation</a></li>
+				</ul>
+				
+			</p>
+		</div>
+	</div>
+	</body>
+</html>
