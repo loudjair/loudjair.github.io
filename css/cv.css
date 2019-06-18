@@ -9,10 +9,15 @@ div.content a{
   color: blue;
 }
 
-div#cv{
-	display: flex;
+div#info,div#cv{
+	display: inline-block;
 }
-
+div#info{
+	position: sticky;
+	vertical-align:top;
+	top:0;
+	border:solid white;
+}
 div#info img{
 	height: 350px;
 }
