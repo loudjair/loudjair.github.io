@@ -34,6 +34,7 @@ p{
 	Css se rapportant aux explications
 */
 
+
 .explication>div{
 	margin-left:30%;
 	margin-top:1.5%;  
@@ -41,6 +42,7 @@ p{
 	background-color: #878f99;
 	border-top: 10px solid black;
 	border-radius: 5px;
+
 }
 
 .explication>div>p{

@@ -16,6 +16,7 @@ function afficher_doc(doc){
 		document.getElementById(tab_doc[i]).style.display="none";
 	}
 	tab_doc = [];
+	document.getElementById(id).style.transition="0.5s ease";
 	document.getElementById(id).style.display="initial";
 
 	tab_doc.push(id);
