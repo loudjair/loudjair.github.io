@@ -1,0 +1,33 @@
+body{
+	overflow-x: hidden;	
+}
+.contenu{
+	float:left;
+	border:1px solid;
+	width:15%;
+	height:20em;
+	background-color:yellow;
+}
+#navi{
+	padding:20px;
+	background-color: red;
+	position: sticky;
+	top: 0;
+	box-shadow: 1px  1px  1px 1px;
+}
+
+#case-1{
+	position: absolute;
+	animation-name:;
+	animation-duration:60s;
+	animation-timing-function: linear;
+	animation-iteration-count:; 
+	left:0%;
+}
+@keyframes test{
+	0% {left:0%;}
+	25% {left:25%}
+	50% {left:50%}
+	75% {left:75%;}
+	100%{left:100%;}
+}
