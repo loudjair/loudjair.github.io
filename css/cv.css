@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background:linear-gradient(to left,#474e5d,#708090) ;
+  font-family: Helvetica, sans-serif;
+}
 h1{
   color:white;
   text-align: center;
@@ -15,8 +23,11 @@ div#info,div#cv{
 div#info{
 	position: sticky;
 	vertical-align:top;
-	top:0;
+	top:3.1em;
 	border:solid white;
+}
+div#info p{
+	text-align: center;
 }
 div#info img{
 	height: 350px;
