@@ -1,0 +1,10 @@
+header{
+	text-align: center;
+	position: sticky;
+	top:0;
+	z-index: 1;
+	background-color: #474e5d;
+}
+header a{
+	color: white;
+}

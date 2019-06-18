@@ -108,3 +108,8 @@ video{
 	position: relative;
 	top: -200px;
 }
+
+.img_tmp{
+	display: inline-block;
+	height: 250px;
+}

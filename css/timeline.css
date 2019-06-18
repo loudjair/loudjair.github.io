@@ -11,7 +11,6 @@ body {
 .timeline {
   position: relative;
   max-width: 1000px;
-  margin: 0 auto;
   border:solid white;
 }
 
@@ -30,8 +29,8 @@ body {
 /* Container around content */
 .container {
   padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
+  position:relative;
+  background-color:inherit;
   width: 50%;
 }
 

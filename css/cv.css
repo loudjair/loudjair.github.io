@@ -9,3 +9,10 @@ div.content a{
   color: blue;
 }
 
+div#cv{
+	display: flex;
+}
+
+div#info img{
+	height: 350px;
+}
