@@ -91,9 +91,13 @@ div#competence{
 	background-color: white;
 	border-radius:6px;
 }
-img.logo_section{
-	height: 25px;
+img.logo_section,.icon_section{
+	height:25px;
 	margin-left:5px;
+}
+
+#interet{
+	height:25px;
 }
 
 section.newSection {
