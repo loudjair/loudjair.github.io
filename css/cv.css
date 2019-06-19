@@ -31,10 +31,16 @@ div#info{
 	vertical-align:top;
 	top:3.1em;
 	border:solid white;
+	padding: 5px;
 }
 div#info p{
 	text-align: center;
 	color: white
+}
+
+div#info h3{
+	text-align: center;
+	color: white;
 }
 div#info img{
 	height: 350px;
@@ -161,4 +167,10 @@ li span{
 @keyframes cinqieme{
 	0%{ opacity: 0}
 	100%{opacity: 1}
+}
+
+hr{
+	
+	margin:8px 0px;
+	background-color: white;
 }
