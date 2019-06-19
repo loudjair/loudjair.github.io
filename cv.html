@@ -6,78 +6,158 @@
     <link rel="stylesheet" type="text/css" href="css/cv.css">
     <link rel="stylesheet" type="text/css" href="css/timeline.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/cv.js"></script>
   </head>
   <body>
     <header>
-    <h1>Portfolio de <i>Loudjair MAUVAIS</i></h1>
-    <a href="index.html">Accueil</a>
-    <a href="projets/js/projets.html">JavaScript</a>
-    <a href="projets/python/projets.html">Python</a>
-    <a href="projets/php/projets.html">Php</a>
-    <a href="cv.html">Mon CV</a>
+      <h1>Portfolio de <i>Loudjair MAUVAIS</i></h1>
+      <a href="index.html">Accueil</a>
+      <a href="projets/js/projets.html">JavaScript</a>
+      <a href="projets/python/projets.html">Python</a>
+      <a href="projets/php/projets.html">PHP</a>
+      <a href="cv.html">Mon CV</a>
     </header>
-  <div id >
+  <div id="cv">
     <div id="info">
       <img src="images/Loudjair.jpg" alt="Loudjair">
       <p>
-        Loudjair<br>
-        MAUVAIS<br>
+        M.Loudjair MAUVAIS<br>
+        3 rue du chemin vert<br>
+        94380 Bonneuil/Marne<br>
         @ mr.loudjair@gmail.com<br>
         &#128222; 06.41.25.79.89<br>
         &#128663; Permis B
-
       </p>
     </div>
-    <!-- Parcour scolaire et professionnel-->
-    <div id="parcour_formation">
-
-      <!-- Experience professionnelle  -->
-      <h1 class="categorie">Experience professionnelle</h1>
-      <div class="timeline"> 
-        <div class="container left">
-          <div class="content">
-            <h2>Mars 2019 - En cours:</h2>
-            <h2>Employé polyvalent chez <a href="www.monoprix.fr/‎">Monoprix</a></h2>
-            <h3>Mission:</h3>
+      <!-- Parcour professionnel, Formations et compétences -->
+      <div id="parcour_formation">
+        <!-- Compétences informatiques -->
+        <section class="newSection">
+            <h1 class="titre_section">Compétences informatiques</h1>
+            <img class="logo_section" src="images/web.png" alt="web">
+          </section>
+        <div id="competence">
+          <ul>
+            <li>Programmation orientée objet.</li>
+            <li>Modélisation d'une base de donnée avec la méthode dite "Merise".</li>
+            <li>Architure d'une application web avec le design pattern "M.V.C"</li>
+          </ul>
+          <div id="langages">
+            <div id="prog">
+              <h5>Langages de programmation</h5>
               <ul>
-                <li>Mise en rayon</li>
-                <li>Gestion de caisse</li>
+                <li>C
+                  <span class="fa fa-star espace premier checked"></span><span class="fa fa-star checked deuxieme "></span>
+                  <span class="fa fa-star troisieme"></span><span class="fa fa-star quatrieme"></span>
+                  <span class="fa fa-star cinqieme"></span></li>
+                <li>Python 3<span class="fa fa-star espace premier checked"></span><span class="fa fa-star checked deuxieme "></span>
+                  <span class="fa fa-star troisieme checked"></span><span class="fa fa-star quatrieme"></span>
+                  <span class="fa fa-star cinqieme"></span></li>
               </ul>
+            </div>
+            <div>
+              <h5>Langages de programmation Web</h5>
+              <ul>
+                <li>PHP<span class="fa fa-star espace premier checked"></span><span class="fa fa-star checked deuxieme "></span>
+                  <span class="fa fa-star checked troisieme"></span><span class="fa fa-star quatrieme"></span>
+                  <span class="fa fa-star cinqieme"></span></li>
+                <li>JavaScript<span class="fa fa-star espace premier checked"></span><span class="fa fa-star  deuxieme checked"></span>
+                  <span class="fa fa-star troisieme checked"></span><span class="fa fa-star quatrieme"></span>
+                  <span class="fa fa-star cinqieme"></span></li>
+                <li>HTML 5<span class="fa fa-star espace premier checked"></span><span class="fa fa-star checked deuxieme "></span>
+                  <span class="fa fa-star troisieme checked"></span><span class="fa fa-star quatrieme"></span>
+                  <span class="fa fa-star cinqieme"></span></li>
+                <li>CSS 3<span class="fa fa-star espace premier checked"></span><span class="fa fa-star checked deuxieme "></span>
+                  <span class="fa fa-star troisieme checked"></span><span class="fa fa-star quatrieme"></span>
+                  <span class="fa fa-star cinqieme"></span></li>
+              </ul>
+            </div>
+            <div id="bdd">
+              <h5>Gestionnaire d'une base de données</h5>
+              <ul>
+                <li>MySQL<span class="fa fa-star espace premier checked"></span><span class="fa fa-star checked deuxieme "></span>
+                  <span class="fa fa-star troisieme checked"></span><span class="fa fa-star quatrieme"></span>
+                  <span class="fa fa-star cinqieme"></span></li>
+                <li>PHPMYADMIN<span class="fa fa-star espace premier checked"></span><span class="fa fa-star checked deuxieme "></span>
+                  <span class="fa fa-star troisieme checked"></span><span class="fa fa-star quatrieme"></span>
+                  <span class="fa fa-star cinqieme"></span></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="container right">
-          <div class="content">
-            <h2>Juillet-Août 2017:</h2>
-            <h2>Chauffeur-Livreur chez <a href="www.groupestarservice.com/">Star's Service</a></h2>
-            <h3>Mission:</h3>
-            <ul>
-              <li>Livraison des colis</li>
-            </ul>
-          </div>
+        <!-- Formations -->
+        <div>
         </div>
-        <div class="container left">
-          <div class="content">
-            <h2>Juillet - Septembre 2016</h2>
-            <h2>Conseiller d'information chez la <a href="www.smerep.fr/‎">SMEREP</a></h2>
-            <h3>Mission:</h3>
-            <ul>
-              <li>Renouvellement des mutuelles étudiantes.</li>
-              <li>Prise en charges des inscriptions des étudiants</li>
-            </ul>
+        <!-- Experience professionnelle  -->
+        <section class="newSection">
+          <h1 class="titre_section">Experience professionnelle</h1>
+          <img class="logo_section" src="images/engineer.png" alt="engineer">
+        </section>
+        <div class="timeline"> 
+          <div class="container left">
+            <div class="content">
+              <h4>Mars 2019 - En cours:</h4>
+              <p>
+                Employé polyvalent<br>
+                <a href="https://www.monoprix.fr/">Monoprix</a><br>
+                Lieu: 94370, Sucy-en-Brie
+              </p><br>
+              <button onclick="zoomer(this.nextElementSibling)">Mission</button>
+              <div class="mission" id="monoprix">
+                -Aide clientèle.<br>
+                -Mise en rayon.<br>
+                -Gestion de caisse.  
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h2>Juillet 2014</h2>
-            <h2>Agent municipal à la mairie de <a href="https://www.ville-bonneuil.fr/">Bonneuil/Marne</a> </h2>
-            <h3>Mission:</h3>
-            <ul>
-            <li>Service de propreté de la ville</li>
-            </ul>
+          <div class="container right">
+            <div class="content">
+              <h4>Juillet-Août 2017:</h4>
+              <p>
+                Chauffeur-Livreur<br>
+                <a href="http://www.groupestarservice.com/">Star's Service</a><br>
+                Lieu: 94380,Bonneuil-sur-Marne
+              </p><br>
+              <button onclick="zoomer(this.nextElementSibling)">Mission</button>
+              <div class="mission" id="star">
+                -Livraison des colis.<br>
+                -La manutention.
+              </div>
+            </div>
           </div>
-        </div>
-        </div>           
-      </div>       
+          <div class="container left">
+            <div class="content">
+              <h4>Juillet - Septembre 2016</h4>
+              <p>
+                Conseiller d'information<br>
+                <a href="https://www.smerep.fr">SMEREP</a><br>
+                Lieu:Ile-de-France
+              </p><br>
+              <button onclick="zoomer(this.nextElementSibling)">Mission</button>
+              <div class="mission" id="smerep">
+                -Renouvellement des mutuelles étudiantes.<br>
+                -Prise en charges des inscriptions des étudiants
+              </div>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h4>Juillet 2014</h4>
+              <p>
+                Agent municipal<br>
+                <a href="https://www.ville-bonneuil.fr/">Direction des services techniques</a><br>
+                Lieu: 94380,Bonneuil-sur-Marne
+              </p><br>
+              <button onclick="zoomer(this.nextElementSibling)">Mission</button>
+              <div class="mission" id="mairie">
+                -Assurer la propreté de la ville
+              </div>
+            </div>
+          </div>
+          </div>           
+        </div>       
+      </div>
     </div>
   </body>
 </html>

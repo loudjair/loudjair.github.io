@@ -1,23 +1,29 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
 }
 
 body {
-  background:linear-gradient(to left,#474e5d,#708090) ;
+  background:linear-gradient(to left,#474e5d,#708090);
   font-family: Helvetica, sans-serif;
 }
-h1{
+h1.titre_section{
   color:white;
-  text-align: center;
-  text-decoration: underline;
+  text-decoration:underline;
 }
 
+div#cv{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 div.content a{
   color: blue;
 }
 
-div#info,div#cv{
+div#info,div#parcour_formation{
 	display: inline-block;
 }
 div#info{
@@ -28,7 +34,130 @@ div#info{
 }
 div#info p{
 	text-align: center;
+	color: white
 }
 div#info img{
 	height: 350px;
+}
+div.mission{
+	position: absolute;
+	transform: scale(0);
+	transition:1s ease;
+	background-color: rgba(0,0,0,0.9);
+	width: 100%;
+	top:0;
+	border-radius: 6px;
+	color: white;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	left:0;
+}
+#monoprix{
+	height: 79%;
+}
+#star{
+	height: 82%;
+}
+
+#smerep{
+	height: 80%;
+}
+#mairie{
+	height: 81%;
+}
+button{
+	position: absolute;
+	left: 0;
+	bottom:0;
+	height: 25px;
+	width: 100%;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+button:hover{
+	cursor: pointer;
+}
+
+div#competence{
+	background-color: white;
+	border-radius:6px;
+}
+img.logo_section{
+	height: 25px;
+	margin-left:5px;
+}
+
+section.newSection {
+	display: flex;
+	justify-content: center;
+}
+
+div#competence ul{
+	position: relative;
+	left:20px;
+}
+
+div#langages{
+	margin-top: 5px;
+	display:flex;
+	justify-content: space-between;
+	padding: 5px
+}
+
+.checked{
+	color: orange;
+}
+.espace{
+	margin-left: 10px;
+}
+li span{
+	opacity: 0;
+}
+.premier{
+	animation-name: premier;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+}
+@keyframes premier{
+	0%{ opacity: 0}
+	100%{opacity: 1}
+}
+.deuxieme{
+	animation-name: deuxieme;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+@keyframes deuxieme{
+	0%{ opacity: 0}
+	100%{opacity: 1}
+}
+.troisieme{
+	animation-name: troisieme;
+	animation-fill-mode: forwards;
+	animation-delay: 1.5s;
+}
+@keyframes troisieme{
+	0%{ opacity: 0}
+	100%{opacity: 1}
+}
+.quatrieme{
+	animation-name: quatrieme;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
+@keyframes quatrieme{
+	0%{ opacity: 0}
+	100%{opacity: 1}
+}
+.cinqieme{
+	animation-name: cinqieme;
+	animation-fill-mode: forwards;
+	animation-delay: 2.5s;
+}
+@keyframes cinqieme{
+	0%{ opacity: 0}
+	100%{opacity: 1}
 }

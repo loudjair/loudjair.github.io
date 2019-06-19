@@ -2,12 +2,12 @@
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 1000px;
+  width: 750px;
   border:solid white;
 }
 
 /* The actual timeline (the vertical ruler) */
-.timeline::after {
+.timeline::after{
   content: '';
   position: absolute;
   width: 6px;
@@ -19,7 +19,7 @@
 }
 
 /* Container around content */
-.container {
+.container{
   padding: 10px 40px;
   position:relative;
   background-color:inherit;
@@ -27,7 +27,7 @@
 }
 
 /* The circles on the timeline */
-.container::after {
+.container::after{
   content: '';
   position: absolute;
   width: 25px;
@@ -85,10 +85,11 @@
 
 /* The actual content */
 .content {
-  padding: 20px 30px;
+  padding: 15px 30px;
   background-color: white;
-  position: relative;
+  position:relative;
   border-radius: 6px;
+  text-align: center;
 }
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
