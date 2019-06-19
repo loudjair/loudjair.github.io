@@ -93,6 +93,7 @@ img.logo_section{
 section.newSection {
 	display: flex;
 	justify-content: center;
+	margin:5px 0px;
 }
 
 div#competence ul{
