@@ -97,7 +97,9 @@
   .timeline::after {
   left: 31px;
   }
-  
+  .timeline{
+    width: 100%;
+  }
   /* Full-width containers */
   .container {
   width: 100%;

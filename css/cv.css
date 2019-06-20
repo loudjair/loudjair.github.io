@@ -178,3 +178,12 @@ hr{
 	margin:8px 0px;
 	background-color: white;
 }
+@media screen and (max-width: 600px){
+	div#info{
+		position: relative;
+	}
+	div#langages{
+		display: flex;
+  		flex-wrap: wrap;
+	}
+}

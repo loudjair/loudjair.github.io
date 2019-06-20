@@ -11,3 +11,9 @@ header a{
 header h1{
 	color: white;
 }
+
+@media screen and (max-width: 600px){
+	header{
+		width: 100%;
+	}
+}
