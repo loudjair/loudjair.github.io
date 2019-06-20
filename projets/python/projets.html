@@ -5,9 +5,34 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../../css/header.css">
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+			margin:0;
+			padding: 0;
+		}
+		body {
+	  		background:linear-gradient(to left,#474e5d,#708090);
+	  		font-family: Helvetica, sans-serif;
+		}
+		@media screen and (max-width: 600px){
+			header{
+				position:sticky;
+				top:0;
+				width: 100%;
+			}
+		}		
+	</style>	
 	<script src="../../js/affichage.js"></script>
 </head>
 <body>
+	<header>
+		<h1>Portfolio</h1>
+		<a href="../../index.html">Accueil</a>
+		<a href="../js/projets.html">JavaScript</a>
+		<a href="../php/projets.html">PHP</a>
+	</header>	
 	<h1>Projets en Python</h1>
 	<div id="projets">
 		<div class="projet" onmouseenter="afficher(this)" onmouseleave="cacher(this)">
