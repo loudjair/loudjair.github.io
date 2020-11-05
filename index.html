@@ -218,7 +218,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-pizza-slice fa-3x"></i><br><span>My Pizza</span></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/pizzeria.jpg" alt="pizzeria" />
+                            <img class="img-fluid" src="assets/img/pizza.png" alt="MyPizza" /><span class="font-weight-bold logoMyPizza">MyPizza</span>
                         </div>
                     </div>
                     <div class="col-md-3 mb-5">
@@ -309,27 +309,41 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="pizzeriaLabel">Pizzeria</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="pizzeriaLabel">MyPizza</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" style="height:22em" src="assets/img/pizzeria.jpg" alt="pizzeria" /><!-- Portfolio Modal - Text-->
+                                    <!-- Portfolio Modal - Image-->
+                                    <div class="d-block mx-auto mb-3">
+                                        <img style="height:10em" src="assets/img/pizza.png" alt="MyPizza" />
+                                        <h3 class="d-inline font-weight-bold">MyPizza</h3>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
                                     
                                     <a href="http://my-pizza-project.herokuapp.com/public/"><h3>WWW</h3></a>
                                     <h3>Contexte:</h3>
                                     <p class="mb-5 text-left">
-                                        En autonomie, nous devions créer un site web de pizzeria avec le langage PHP dans un style de programmation procédurale. La partie back-end devait s’appuyer sur une base de données mysql.Et la réalisation du front à l’aide de Javascript, HTML CSS..
+                                        En autonomie, nous devions créer un site web de pizzeria. Le but de ce projet était de créer un petit projet, afin de maîtriser les bases en PHP, javascript. La gestion de la base de donnée s'est faite avec MySQL. 
+                                        À la fin j'ai décidé de changer le stack technique pour optimiser mon travail et mon choix s'est porté sur le Framework PHP: <u>Laravel</u>.
                                     </p>
                                     <h3>Missions:</h3>
                                     <p>
                                         <ul class="text-left">
-                                            <li>Interface client permettre de commander des articles en ligne</li>
-                                            <li>Interface admin, permettre la prise en charge des commandes</li>
+                                            <li>Permettre au client de commander des articles en ligne</li>
+                                            <li>Créer une page d'administration, pour gérer les commandes et les produits.</li>
+                                            <li>Concevoir la fonctionnalité: Notifications</li>
+                                            <li>
+                                                Appel à des apis externes
+                                                <ul>
+                                                    <li>API Pusher: Traitement des données en temps réel </li>
+                                                    <li>API Gouv adresse: Vérification des adresses en fonction de la ville choisie</li>
+                                                </ul>
+                                            </li>
                                             <li>Mise en place d'une Base de donnée en MYSQL</li>
-                                            <li>Langage de programmation PHP</li>
+                                            <li>Développement du projet avec le framework php Laravel</li>
                                         </ul>
                                     </p>
                                     <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
